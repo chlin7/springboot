@@ -13,8 +13,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.zh.SpringBootDemo.domain.User;
-import com.zh.SpringBootDemo.service.UserRepository;
+import com.zh.SpringBootDemo.domain.p.User;
+import com.zh.SpringBootDemo.domain.p.UserRepository;
+import com.zh.SpringBootDemo.domain.s.Test;
+import com.zh.SpringBootDemo.domain.s.TestRepository;
 import com.zh.SpringBootDemo.service.UserService;
 
 @RestController 
@@ -26,6 +28,9 @@ public class UserController {
 	
 	@Autowired
     private UserRepository userRepository;
+	
+	@Autowired
+	private TestRepository testRepository;
 	
 	// 创建线程安全的Map 
     static Map<Long, User> users = Collections.synchronizedMap(new HashMap<Long, User>()); 
@@ -42,6 +47,7 @@ public class UserController {
     	Integer userCount = userService.getUserCount();
     	Integer userCount2 = userService.getUserCount2();
     	User uses = userRepository.findByName("chenhualin");
+    	Test test = testRepository.findByName("test");
         return userCount; 
     } 
 

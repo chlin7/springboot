@@ -12,8 +12,8 @@ import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
-import com.zh.SpringBootDemo.domain.User;
-import com.zh.SpringBootDemo.service.UserRepository;
+import com.zh.SpringBootDemo.domain.p.User;
+import com.zh.SpringBootDemo.domain.p.UserRepository;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)

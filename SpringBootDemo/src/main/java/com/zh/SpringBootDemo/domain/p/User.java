@@ -1,4 +1,4 @@
-package com.zh.SpringBootDemo.domain;
+package com.zh.SpringBootDemo.domain.p;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
