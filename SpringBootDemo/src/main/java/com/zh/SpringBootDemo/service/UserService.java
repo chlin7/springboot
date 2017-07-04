@@ -24,4 +24,6 @@ public interface UserService {
      * 删除所有用户
      */
     void deleteAllUsers();
+
+	Integer getUserCount2();
 }

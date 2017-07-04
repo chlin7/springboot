@@ -40,6 +40,7 @@ public class UserController {
     @RequestMapping(value="/userCount", method=RequestMethod.GET) 
     public Integer getUserCount() { 
     	Integer userCount = userService.getUserCount();
+    	Integer userCount2 = userService.getUserCount2();
     	User uses = userRepository.findByName("chenhualin");
         return userCount; 
     } 
