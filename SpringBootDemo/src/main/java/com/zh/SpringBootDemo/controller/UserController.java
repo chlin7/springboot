@@ -19,6 +19,8 @@ import com.zh.SpringBootDemo.domain.s.Test;
 import com.zh.SpringBootDemo.domain.s.TestRepository;
 import com.zh.SpringBootDemo.service.UserService;
 
+import io.swagger.annotations.ApiOperation;
+
 @RestController 
 @RequestMapping(value="/users")     // 通过这里配置使下面的映射都在/users下 
 public class UserController {
@@ -42,6 +44,8 @@ public class UserController {
         List<User> r = new ArrayList<User>(users.values());
         return r; 
     }
+    
+    @ApiOperation(value="获取用户数量", notes="获取User表的用户数量")
     @RequestMapping(value="/userCount", method=RequestMethod.GET) 
     public Integer getUserCount() { 
     	Integer userCount = userService.getUserCount();
