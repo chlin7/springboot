@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,6 +25,8 @@ import io.swagger.annotations.ApiOperation;
 @RestController 
 @RequestMapping(value="/users")     // 通过这里配置使下面的映射都在/users下 
 public class UserController {
+	
+	private Logger logger = Logger.getLogger(getClass());
 	
 	@Autowired
 	private UserService userService;
@@ -52,6 +55,9 @@ public class UserController {
     	Integer userCount2 = userService.getUserCount2();
     	User uses = userRepository.findByName("chenhualin");
     	Test test = testRepository.findByName("test");
+    	
+    	logger.info("===========log4j==info================");
+    	
         return userCount; 
     } 
 
