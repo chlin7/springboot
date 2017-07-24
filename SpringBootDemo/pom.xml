@@ -75,10 +75,10 @@
 		</dependency>
 		<!--添加Swagger2依赖结束 -->
 		<!-- 添加mongodb依赖开始 -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-mongodb</artifactId>
-		</dependency>
+		</dependency> -->
 		<!-- 添加mongodb依赖结束 -->
 
 	</dependencies>
