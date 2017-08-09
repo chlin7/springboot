@@ -1,3 +1,9 @@
-2017-07-24 17:37:07,862  INFO SpringBootDemoApplication:48 ---- Starting SpringBootDemoApplication on zhenghedeMacBook-Pro.local with PID 3936 (/Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo/target/classes started by zhenghe1 in /Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo)
-2017-07-24 17:37:07,864  INFO SpringBootDemoApplication:597 ---- The following profiles are active: dev
-2017-07-24 17:37:14,621  INFO SpringBootDemoApplication:57 ---- Started SpringBootDemoApplication in 7.01 seconds (JVM running for 7.38)
+2017-08-09 14:57:57,287  INFO SpringBootDemoApplication:48 ---- Starting SpringBootDemoApplication on zhenghedeMacBook-Pro.local with PID 3049 (/Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo/target/classes started by zhenghe1 in /Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo)
+2017-08-09 14:57:57,291  INFO SpringBootDemoApplication:597 ---- The following profiles are active: dev
+2017-08-09 14:58:09,662  INFO SpringBootDemoApplication:57 ---- Started SpringBootDemoApplication in 12.702 seconds (JVM running for 13.346)
+2017-08-09 15:01:29,851  INFO SpringBootDemoApplication:48 ---- Starting SpringBootDemoApplication on zhenghedeMacBook-Pro.local with PID 3067 (/Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo/target/classes started by zhenghe1 in /Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo)
+2017-08-09 15:01:29,853  INFO SpringBootDemoApplication:597 ---- The following profiles are active: dev
+2017-08-09 15:01:36,715  INFO SpringBootDemoApplication:57 ---- Started SpringBootDemoApplication in 7.121 seconds (JVM running for 7.502)
+2017-08-09 15:02:55,104  INFO SpringBootDemoApplication:48 ---- Starting SpringBootDemoApplication on zhenghedeMacBook-Pro.local with PID 3072 (/Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo/target/classes started by zhenghe1 in /Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo)
+2017-08-09 15:02:55,106  INFO SpringBootDemoApplication:597 ---- The following profiles are active: dev
+2017-08-09 15:03:02,701  INFO SpringBootDemoApplication:57 ---- Started SpringBootDemoApplication in 7.867 seconds (JVM running for 8.256)

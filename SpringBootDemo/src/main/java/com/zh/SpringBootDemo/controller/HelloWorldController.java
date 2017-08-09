@@ -22,17 +22,17 @@ public class HelloWorldController {
         throw new MyException("发生错误2");
     }
 	
-//	@RequestMapping("/hello")
-//	public String index() {
-//		return "Hello World你好";
-//	}
-	
-	
 	@RequestMapping("/")
     public String index(ModelMap map) {
         // 加入一个属性，用来在模板中读取
         map.addAttribute("host", "http://blog.didispace.com");
         // return模板文件的名称，对应src/main/resources/templates/index.html
-        return "index";  
+        return "securityIndex";  
     }
+	
+	@RequestMapping("/login")
+    public String login() {
+        return "login";
+    }
+	
 }

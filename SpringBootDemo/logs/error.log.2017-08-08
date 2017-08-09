@@ -1,0 +1,4 @@
+2017-08-08 16:07:56,126 ERROR TemplateEngine:1085 - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "error": Exception evaluating SpringEL expression: "exception.message" (error:10)
+2017-08-08 16:11:59,856 ERROR TemplateEngine:1085 - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "error": Exception evaluating SpringEL expression: "exception.message" (error:10)
+2017-08-08 16:12:03,533 ERROR TemplateEngine:1085 - [THYMELEAF][http-nio-8080-exec-4] Exception processing template "error": Exception evaluating SpringEL expression: "exception.message" (error:10)
+2017-08-08 16:12:05,644 ERROR TemplateEngine:1085 - [THYMELEAF][http-nio-8080-exec-5] Exception processing template "error": Exception evaluating SpringEL expression: "exception.message" (error:10)

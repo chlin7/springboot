@@ -1,200 +1,765 @@
-2017-07-24 17:37:07,862  INFO SpringBootDemoApplication:48 - Starting SpringBootDemoApplication on zhenghedeMacBook-Pro.local with PID 3936 (/Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo/target/classes started by zhenghe1 in /Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo)
-2017-07-24 17:37:07,864  INFO SpringBootDemoApplication:597 - The following profiles are active: dev
-2017-07-24 17:37:08,100  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7494f96a: startup date [Mon Jul 24 17:37:08 CST 2017]; root of context hierarchy
-2017-07-24 17:37:08,194  INFO Version:30 - HV000001: Hibernate Validator 5.3.5.Final
-2017-07-24 17:37:09,391  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4e0d3287] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2017-07-24 17:37:09,862  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
-2017-07-24 17:37:09,999  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 1902 ms
-2017-07-24 17:37:10,164  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
-2017-07-24 17:37:10,168  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
-2017-07-24 17:37:10,169  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2017-07-24 17:37:10,169  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2017-07-24 17:37:10,169  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
-2017-07-24 17:37:11,425  INFO LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'primaryPersistenceUnit'
-2017-07-24 17:37:11,443  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+2017-08-09 14:57:57,287  INFO SpringBootDemoApplication:48 - Starting SpringBootDemoApplication on zhenghedeMacBook-Pro.local with PID 3049 (/Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo/target/classes started by zhenghe1 in /Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo)
+2017-08-09 14:57:57,291  INFO SpringBootDemoApplication:597 - The following profiles are active: dev
+2017-08-09 14:57:57,573  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@687e99d8: startup date [Wed Aug 09 14:57:57 CST 2017]; root of context hierarchy
+2017-08-09 14:57:57,697  INFO Version:30 - HV000001: Hibernate Validator 5.3.5.Final
+2017-08-09 14:57:59,182  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6c87403c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-08-09 14:57:59,766  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-08-09 14:57:59,924  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 2355 ms
+2017-08-09 14:58:00,147  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-08-09 14:58:00,147  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-08-09 14:58:00,148  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-08-09 14:58:00,148  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-08-09 14:58:00,149  INFO DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-08-09 14:58:00,149  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-08-09 14:58:05,583  INFO LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'primaryPersistenceUnit'
+2017-08-09 14:58:05,606  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
 	name: primaryPersistenceUnit
 	...]
-2017-07-24 17:37:11,510  INFO Version:37 - HHH000412: Hibernate Core {5.0.12.Final}
-2017-07-24 17:37:11,511  INFO Environment:213 - HHH000206: hibernate.properties not found
-2017-07-24 17:37:11,514  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
-2017-07-24 17:37:11,555  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2017-07-24 17:37:11,669  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2017-07-24 17:37:12,077  INFO LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'primaryPersistenceUnit'
-2017-07-24 17:37:12,096  INFO LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'secondaryPersistenceUnit'
-2017-07-24 17:37:12,096  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+2017-08-09 14:58:05,709  INFO Version:37 - HHH000412: Hibernate Core {5.0.12.Final}
+2017-08-09 14:58:05,712  INFO Environment:213 - HHH000206: hibernate.properties not found
+2017-08-09 14:58:05,714  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-08-09 14:58:05,767  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-08-09 14:58:05,926  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-08-09 14:58:06,445  INFO LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'primaryPersistenceUnit'
+2017-08-09 14:58:06,465  INFO LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'secondaryPersistenceUnit'
+2017-08-09 14:58:06,466  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
 	name: secondaryPersistenceUnit
 	...]
-2017-07-24 17:37:12,105  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2017-07-24 17:37:12,129  INFO LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'secondaryPersistenceUnit'
-2017-07-24 17:37:12,410  INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
-2017-07-24 17:37:12,545  INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
-2017-07-24 17:37:13,069  INFO RequestMappingHandlerMapping:543 - Mapped "{[/test/]}" onto public java.lang.String com.zh.SpringBootDemo.controller.HelloWorldController.index(org.springframework.ui.ModelMap)
-2017-07-24 17:37:13,069  INFO RequestMappingHandlerMapping:543 - Mapped "{[/test/json]}" onto public java.lang.String com.zh.SpringBootDemo.controller.HelloWorldController.json() throws com.zh.SpringBootDemo.exception.MyException
-2017-07-24 17:37:13,070  INFO RequestMappingHandlerMapping:543 - Mapped "{[/test/hello]}" onto public java.lang.String com.zh.SpringBootDemo.controller.HelloWorldController.hello() throws java.lang.Exception
-2017-07-24 17:37:13,073  INFO RequestMappingHandlerMapping:543 - Mapped "{[/users/{id}],methods=[GET]}" onto public com.zh.SpringBootDemo.domain.p.User com.zh.SpringBootDemo.controller.UserController.getUser(java.lang.Long)
-2017-07-24 17:37:13,073  INFO RequestMappingHandlerMapping:543 - Mapped "{[/users/],methods=[POST]}" onto public java.lang.String com.zh.SpringBootDemo.controller.UserController.postUser(com.zh.SpringBootDemo.domain.p.User)
-2017-07-24 17:37:13,074  INFO RequestMappingHandlerMapping:543 - Mapped "{[/users/],methods=[GET]}" onto public java.util.List<com.zh.SpringBootDemo.domain.p.User> com.zh.SpringBootDemo.controller.UserController.getUserList()
-2017-07-24 17:37:13,074  INFO RequestMappingHandlerMapping:543 - Mapped "{[/users/userCount],methods=[GET]}" onto public java.lang.Integer com.zh.SpringBootDemo.controller.UserController.getUserCount()
-2017-07-24 17:37:13,075  INFO RequestMappingHandlerMapping:543 - Mapped "{[/users/{id}],methods=[PUT]}" onto public java.lang.String com.zh.SpringBootDemo.controller.UserController.putUser(java.lang.Long,com.zh.SpringBootDemo.domain.p.User)
-2017-07-24 17:37:13,075  INFO RequestMappingHandlerMapping:543 - Mapped "{[/users/{id}],methods=[DELETE]}" onto public java.lang.String com.zh.SpringBootDemo.controller.UserController.deleteUser(java.lang.Long)
-2017-07-24 17:37:13,076  INFO RequestMappingHandlerMapping:543 - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
-2017-07-24 17:37:13,079  INFO RequestMappingHandlerMapping:543 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
-2017-07-24 17:37:13,080  INFO RequestMappingHandlerMapping:543 - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
-2017-07-24 17:37:13,081  INFO RequestMappingHandlerMapping:543 - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
-2017-07-24 17:37:13,084  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2017-07-24 17:37:13,084  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2017-07-24 17:37:13,555  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7494f96a: startup date [Mon Jul 24 17:37:08 CST 2017]; root of context hierarchy
-2017-07-24 17:37:13,614  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-07-24 17:37:13,614  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-07-24 17:37:13,629  INFO ExceptionHandlerExceptionResolver:273 - Detected @ExceptionHandler methods in globalExceptionHandler
-2017-07-24 17:37:13,654  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-07-24 17:37:14,305  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
-2017-07-24 17:37:14,321  INFO DocumentationPluginsBootstrapper:80 - Context refreshed
-2017-07-24 17:37:14,341  INFO DocumentationPluginsBootstrapper:83 - Found {0} custom documentation plugin(s)
-2017-07-24 17:37:14,348  INFO ApiListingReferenceScanner:53 - Scanning for api listing references
-2017-07-24 17:37:14,352  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
-2017-07-24 17:37:14,354  INFO ApiListingReferenceScanner:72 - Request mapping: index belongs to groups: [[ResourceGroup{groupName='hello-world-controller', position=0, controller=com.zh.SpringBootDemo.controller.HelloWorldController}]] 
-2017-07-24 17:37:14,355  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
-2017-07-24 17:37:14,355  INFO ApiListingReferenceScanner:72 - Request mapping: hello belongs to groups: [[ResourceGroup{groupName='hello-world-controller', position=0, controller=com.zh.SpringBootDemo.controller.HelloWorldController}]] 
-2017-07-24 17:37:14,356  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
-2017-07-24 17:37:14,356  INFO ApiListingReferenceScanner:72 - Request mapping: json belongs to groups: [[ResourceGroup{groupName='hello-world-controller', position=0, controller=com.zh.SpringBootDemo.controller.HelloWorldController}]] 
-2017-07-24 17:37:14,357  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method postUser was user-controller
-2017-07-24 17:37:14,357  INFO ApiListingReferenceScanner:72 - Request mapping: postUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.zh.SpringBootDemo.controller.UserController}]] 
-2017-07-24 17:37:14,357  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserList was user-controller
-2017-07-24 17:37:14,358  INFO ApiListingReferenceScanner:72 - Request mapping: getUserList belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.zh.SpringBootDemo.controller.UserController}]] 
-2017-07-24 17:37:14,358  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserCount was user-controller
-2017-07-24 17:37:14,359  INFO ApiListingReferenceScanner:72 - Request mapping: getUserCount belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.zh.SpringBootDemo.controller.UserController}]] 
-2017-07-24 17:37:14,359  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUser was user-controller
-2017-07-24 17:37:14,359  INFO ApiListingReferenceScanner:72 - Request mapping: getUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.zh.SpringBootDemo.controller.UserController}]] 
-2017-07-24 17:37:14,360  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method putUser was user-controller
-2017-07-24 17:37:14,360  INFO ApiListingReferenceScanner:72 - Request mapping: putUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.zh.SpringBootDemo.controller.UserController}]] 
-2017-07-24 17:37:14,361  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method deleteUser was user-controller
-2017-07-24 17:37:14,361  INFO ApiListingReferenceScanner:72 - Request mapping: deleteUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.zh.SpringBootDemo.controller.UserController}]] 
-2017-07-24 17:37:14,365  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/hello-world-controller Description: hello-world-controller Position: 0
-2017-07-24 17:37:14,366  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/user-controller Description: user-controller Position: 0
-2017-07-24 17:37:14,385  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
-2017-07-24 17:37:14,385  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
-2017-07-24 17:37:14,389  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
-2017-07-24 17:37:14,389  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
-2017-07-24 17:37:14,396  INFO OperationsKeyGenerator:51 - Cache key generated: /test/hello.com.zh.SpringBootDemo.controller.HelloWorldController.hello.DefaultGenericTypeNamingStrategy
-2017-07-24 17:37:14,396  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /test/hello.com.zh.SpringBootDemo.controller.HelloWorldController.hello.DefaultGenericTypeNamingStrategy
-2017-07-24 17:37:14,405  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
-2017-07-24 17:37:14,408  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
-2017-07-24 17:37:14,410  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
-2017-07-24 17:37:14,411  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
-2017-07-24 17:37:14,411  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
-2017-07-24 17:37:14,412  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
-2017-07-24 17:37:14,413  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
-2017-07-24 17:37:14,414  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
-2017-07-24 17:37:14,415  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
-2017-07-24 17:37:14,416  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
-2017-07-24 17:37:14,416  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
-2017-07-24 17:37:14,417  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
-2017-07-24 17:37:14,418  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
-2017-07-24 17:37:14,419  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
-2017-07-24 17:37:14,419  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
-2017-07-24 17:37:14,420  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
-2017-07-24 17:37:14,424  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
-2017-07-24 17:37:14,424  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
-2017-07-24 17:37:14,424  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
-2017-07-24 17:37:14,424  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
-2017-07-24 17:37:14,425  INFO OperationsKeyGenerator:51 - Cache key generated: /test/.com.zh.SpringBootDemo.controller.HelloWorldController.index.DefaultGenericTypeNamingStrategy
-2017-07-24 17:37:14,425  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /test/.com.zh.SpringBootDemo.controller.HelloWorldController.index.DefaultGenericTypeNamingStrategy
-2017-07-24 17:37:14,431  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
-2017-07-24 17:37:14,432  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
-2017-07-24 17:37:14,433  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
-2017-07-24 17:37:14,434  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
-2017-07-24 17:37:14,435  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
-2017-07-24 17:37:14,436  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
-2017-07-24 17:37:14,436  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
-2017-07-24 17:37:14,437  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
-2017-07-24 17:37:14,438  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
-2017-07-24 17:37:14,439  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
-2017-07-24 17:37:14,440  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
-2017-07-24 17:37:14,441  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
-2017-07-24 17:37:14,442  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
-2017-07-24 17:37:14,443  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
-2017-07-24 17:37:14,444  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
-2017-07-24 17:37:14,445  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
-2017-07-24 17:37:14,446  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
-2017-07-24 17:37:14,446  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
-2017-07-24 17:37:14,447  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
-2017-07-24 17:37:14,447  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
-2017-07-24 17:37:14,447  INFO OperationsKeyGenerator:51 - Cache key generated: /test/json.com.zh.SpringBootDemo.controller.HelloWorldController.json.DefaultGenericTypeNamingStrategy
-2017-07-24 17:37:14,448  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /test/json.com.zh.SpringBootDemo.controller.HelloWorldController.json.DefaultGenericTypeNamingStrategy
-2017-07-24 17:37:14,448  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
-2017-07-24 17:37:14,449  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
-2017-07-24 17:37:14,450  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
-2017-07-24 17:37:14,451  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
-2017-07-24 17:37:14,451  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
-2017-07-24 17:37:14,452  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
-2017-07-24 17:37:14,453  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
-2017-07-24 17:37:14,453  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
-2017-07-24 17:37:14,454  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
-2017-07-24 17:37:14,455  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
-2017-07-24 17:37:14,455  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
-2017-07-24 17:37:14,456  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
-2017-07-24 17:37:14,457  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
-2017-07-24 17:37:14,457  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
-2017-07-24 17:37:14,458  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
-2017-07-24 17:37:14,458  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
-2017-07-24 17:37:14,476  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
-2017-07-24 17:37:14,476  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
-2017-07-24 17:37:14,476  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
-2017-07-24 17:37:14,477  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
-2017-07-24 17:37:14,477  INFO OperationsKeyGenerator:51 - Cache key generated: /users/{id}.com.zh.SpringBootDemo.controller.UserController.deleteUser.DefaultGenericTypeNamingStrategy
-2017-07-24 17:37:14,477  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/{id}.com.zh.SpringBootDemo.controller.UserController.deleteUser.DefaultGenericTypeNamingStrategy
-2017-07-24 17:37:14,480  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method deleteUser was user-controller
-2017-07-24 17:37:14,481  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method deleteUser was user-controller
-2017-07-24 17:37:14,482  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.zh.SpringBootDemo.domain.p.User(true)
-2017-07-24 17:37:14,482  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.zh.SpringBootDemo.domain.p.User(true)
-2017-07-24 17:37:14,483  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.zh.SpringBootDemo.domain.p.User(true)
-2017-07-24 17:37:14,484  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.zh.SpringBootDemo.domain.p.User(true)
-2017-07-24 17:37:14,511  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.zh.SpringBootDemo.domain.p.User(true)
-2017-07-24 17:37:14,511  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.zh.SpringBootDemo.domain.p.User(true)
-2017-07-24 17:37:14,512  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.zh.SpringBootDemo.domain.p.User(true)
-2017-07-24 17:37:14,512  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.zh.SpringBootDemo.domain.p.User(true)
-2017-07-24 17:37:14,513  INFO OperationsKeyGenerator:51 - Cache key generated: /users/{id}.com.zh.SpringBootDemo.controller.UserController.getUser.DefaultGenericTypeNamingStrategy
-2017-07-24 17:37:14,513  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/{id}.com.zh.SpringBootDemo.controller.UserController.getUser.DefaultGenericTypeNamingStrategy
-2017-07-24 17:37:14,515  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUser was user-controller
-2017-07-24 17:37:14,516  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUser was user-controller
-2017-07-24 17:37:14,518  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Integer(true)
-2017-07-24 17:37:14,518  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.Integer(true)
-2017-07-24 17:37:14,518  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Integer(true)
-2017-07-24 17:37:14,519  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.Integer(true)
-2017-07-24 17:37:14,519  INFO OperationsKeyGenerator:51 - Cache key generated: /users/userCount.com.zh.SpringBootDemo.controller.UserController.getUserCount.DefaultGenericTypeNamingStrategy
-2017-07-24 17:37:14,519  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/userCount.com.zh.SpringBootDemo.controller.UserController.getUserCount.DefaultGenericTypeNamingStrategy
-2017-07-24 17:37:14,520  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserCount was user-controller
-2017-07-24 17:37:14,521  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserCount was user-controller
-2017-07-24 17:37:14,525  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.util.List<com.zh.SpringBootDemo.domain.p.User>(true)
-2017-07-24 17:37:14,525  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.util.List<com.zh.SpringBootDemo.domain.p.User>(true)
-2017-07-24 17:37:14,525  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.util.List<com.zh.SpringBootDemo.domain.p.User>(true)
-2017-07-24 17:37:14,526  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.util.List<com.zh.SpringBootDemo.domain.p.User>(true)
-2017-07-24 17:37:14,526  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.zh.SpringBootDemo.domain.p.User(true)
-2017-07-24 17:37:14,526  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.zh.SpringBootDemo.domain.p.User(true)
-2017-07-24 17:37:14,527  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: java.util.List<com.zh.SpringBootDemo.domain.p.User>(true)
-2017-07-24 17:37:14,527  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key java.util.List<com.zh.SpringBootDemo.domain.p.User>(true)
-2017-07-24 17:37:14,529  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.zh.SpringBootDemo.domain.p.User(true)
-2017-07-24 17:37:14,529  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.zh.SpringBootDemo.domain.p.User(true)
-2017-07-24 17:37:14,529  INFO OperationsKeyGenerator:51 - Cache key generated: /users/.com.zh.SpringBootDemo.controller.UserController.getUserList.DefaultGenericTypeNamingStrategy
-2017-07-24 17:37:14,530  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/.com.zh.SpringBootDemo.controller.UserController.getUserList.DefaultGenericTypeNamingStrategy
-2017-07-24 17:37:14,531  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserList was user-controller
-2017-07-24 17:37:14,532  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserList was user-controller
-2017-07-24 17:37:14,533  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
-2017-07-24 17:37:14,533  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
-2017-07-24 17:37:14,534  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
-2017-07-24 17:37:14,534  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
-2017-07-24 17:37:14,534  INFO OperationsKeyGenerator:51 - Cache key generated: /users/.com.zh.SpringBootDemo.controller.UserController.postUser.DefaultGenericTypeNamingStrategy
-2017-07-24 17:37:14,535  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/.com.zh.SpringBootDemo.controller.UserController.postUser.DefaultGenericTypeNamingStrategy
-2017-07-24 17:37:14,543  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method postUser was user-controller
-2017-07-24 17:37:14,544  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method postUser was user-controller
-2017-07-24 17:37:14,545  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
-2017-07-24 17:37:14,545  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
-2017-07-24 17:37:14,546  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
-2017-07-24 17:37:14,546  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
-2017-07-24 17:37:14,546  INFO OperationsKeyGenerator:51 - Cache key generated: /users/{id}.com.zh.SpringBootDemo.controller.UserController.putUser.DefaultGenericTypeNamingStrategy
-2017-07-24 17:37:14,546  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/{id}.com.zh.SpringBootDemo.controller.UserController.putUser.DefaultGenericTypeNamingStrategy
-2017-07-24 17:37:14,548  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method putUser was user-controller
-2017-07-24 17:37:14,549  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method putUser was user-controller
-2017-07-24 17:37:14,615  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
-2017-07-24 17:37:14,621  INFO SpringBootDemoApplication:57 - Started SpringBootDemoApplication in 7.01 seconds (JVM running for 7.38)
+2017-08-09 14:58:06,474  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-08-09 14:58:06,494  INFO LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'secondaryPersistenceUnit'
+2017-08-09 14:58:07,021  INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-08-09 14:58:07,200  INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-08-09 14:58:07,678  INFO RequestMappingHandlerMapping:543 - Mapped "{[/test/]}" onto public java.lang.String com.zh.SpringBootDemo.controller.HelloWorldController.index(org.springframework.ui.ModelMap)
+2017-08-09 14:58:07,679  INFO RequestMappingHandlerMapping:543 - Mapped "{[/test/json]}" onto public java.lang.String com.zh.SpringBootDemo.controller.HelloWorldController.json() throws com.zh.SpringBootDemo.exception.MyException
+2017-08-09 14:58:07,680  INFO RequestMappingHandlerMapping:543 - Mapped "{[/test/hello]}" onto public java.lang.String com.zh.SpringBootDemo.controller.HelloWorldController.hello() throws java.lang.Exception
+2017-08-09 14:58:07,680  INFO RequestMappingHandlerMapping:543 - Mapped "{[/test/login]}" onto public java.lang.String com.zh.SpringBootDemo.controller.HelloWorldController.login()
+2017-08-09 14:58:07,683  INFO RequestMappingHandlerMapping:543 - Mapped "{[/users/],methods=[GET]}" onto public java.util.List<com.zh.SpringBootDemo.domain.p.User> com.zh.SpringBootDemo.controller.UserController.getUserList()
+2017-08-09 14:58:07,683  INFO RequestMappingHandlerMapping:543 - Mapped "{[/users/userCount],methods=[GET]}" onto public java.lang.Integer com.zh.SpringBootDemo.controller.UserController.getUserCount()
+2017-08-09 14:58:07,684  INFO RequestMappingHandlerMapping:543 - Mapped "{[/users/],methods=[POST]}" onto public java.lang.String com.zh.SpringBootDemo.controller.UserController.postUser(com.zh.SpringBootDemo.domain.p.User)
+2017-08-09 14:58:07,684  INFO RequestMappingHandlerMapping:543 - Mapped "{[/users/{id}],methods=[GET]}" onto public com.zh.SpringBootDemo.domain.p.User com.zh.SpringBootDemo.controller.UserController.getUser(java.lang.Long)
+2017-08-09 14:58:07,684  INFO RequestMappingHandlerMapping:543 - Mapped "{[/users/{id}],methods=[PUT]}" onto public java.lang.String com.zh.SpringBootDemo.controller.UserController.putUser(java.lang.Long,com.zh.SpringBootDemo.domain.p.User)
+2017-08-09 14:58:07,685  INFO RequestMappingHandlerMapping:543 - Mapped "{[/users/{id}],methods=[DELETE]}" onto public java.lang.String com.zh.SpringBootDemo.controller.UserController.deleteUser(java.lang.Long)
+2017-08-09 14:58:07,686  INFO RequestMappingHandlerMapping:543 - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2017-08-09 14:58:07,688  INFO RequestMappingHandlerMapping:543 - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2017-08-09 14:58:07,689  INFO RequestMappingHandlerMapping:543 - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2017-08-09 14:58:07,690  INFO RequestMappingHandlerMapping:543 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2017-08-09 14:58:07,694  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-08-09 14:58:07,694  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-09 14:58:08,121  INFO DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@703eead0, org.springframework.security.web.context.SecurityContextPersistenceFilter@1e09c0b, org.springframework.security.web.header.HeaderWriterFilter@4edd8a0a, org.springframework.security.web.csrf.CsrfFilter@69fe8c75, org.springframework.security.web.authentication.logout.LogoutFilter@18918d70, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@73417494, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@48f2d51d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40d04cf8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@674fd531, org.springframework.security.web.session.SessionManagementFilter@257d3968, org.springframework.security.web.access.ExceptionTranslationFilter@3331800f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@34c07ecc]
+2017-08-09 14:58:08,402  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@687e99d8: startup date [Wed Aug 09 14:57:57 CST 2017]; root of context hierarchy
+2017-08-09 14:58:08,470  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-09 14:58:08,470  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-09 14:58:08,491  INFO ExceptionHandlerExceptionResolver:273 - Detected @ExceptionHandler methods in globalExceptionHandler
+2017-08-09 14:58:08,524  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-09 14:58:09,294  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-08-09 14:58:09,311  INFO DocumentationPluginsBootstrapper:80 - Context refreshed
+2017-08-09 14:58:09,338  INFO DocumentationPluginsBootstrapper:83 - Found {0} custom documentation plugin(s)
+2017-08-09 14:58:09,345  INFO ApiListingReferenceScanner:53 - Scanning for api listing references
+2017-08-09 14:58:09,351  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 14:58:09,354  INFO ApiListingReferenceScanner:72 - Request mapping: index belongs to groups: [[ResourceGroup{groupName='hello-world-controller', position=0, controller=com.zh.SpringBootDemo.controller.HelloWorldController}]] 
+2017-08-09 14:58:09,355  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 14:58:09,355  INFO ApiListingReferenceScanner:72 - Request mapping: hello belongs to groups: [[ResourceGroup{groupName='hello-world-controller', position=0, controller=com.zh.SpringBootDemo.controller.HelloWorldController}]] 
+2017-08-09 14:58:09,355  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 14:58:09,355  INFO ApiListingReferenceScanner:72 - Request mapping: json belongs to groups: [[ResourceGroup{groupName='hello-world-controller', position=0, controller=com.zh.SpringBootDemo.controller.HelloWorldController}]] 
+2017-08-09 14:58:09,356  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 14:58:09,356  INFO ApiListingReferenceScanner:72 - Request mapping: login belongs to groups: [[ResourceGroup{groupName='hello-world-controller', position=0, controller=com.zh.SpringBootDemo.controller.HelloWorldController}]] 
+2017-08-09 14:58:09,356  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserList was user-controller
+2017-08-09 14:58:09,356  INFO ApiListingReferenceScanner:72 - Request mapping: getUserList belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.zh.SpringBootDemo.controller.UserController}]] 
+2017-08-09 14:58:09,357  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method postUser was user-controller
+2017-08-09 14:58:09,357  INFO ApiListingReferenceScanner:72 - Request mapping: postUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.zh.SpringBootDemo.controller.UserController}]] 
+2017-08-09 14:58:09,358  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserCount was user-controller
+2017-08-09 14:58:09,358  INFO ApiListingReferenceScanner:72 - Request mapping: getUserCount belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.zh.SpringBootDemo.controller.UserController}]] 
+2017-08-09 14:58:09,358  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUser was user-controller
+2017-08-09 14:58:09,358  INFO ApiListingReferenceScanner:72 - Request mapping: getUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.zh.SpringBootDemo.controller.UserController}]] 
+2017-08-09 14:58:09,359  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method putUser was user-controller
+2017-08-09 14:58:09,359  INFO ApiListingReferenceScanner:72 - Request mapping: putUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.zh.SpringBootDemo.controller.UserController}]] 
+2017-08-09 14:58:09,360  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method deleteUser was user-controller
+2017-08-09 14:58:09,360  INFO ApiListingReferenceScanner:72 - Request mapping: deleteUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.zh.SpringBootDemo.controller.UserController}]] 
+2017-08-09 14:58:09,364  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/hello-world-controller Description: hello-world-controller Position: 0
+2017-08-09 14:58:09,364  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+2017-08-09 14:58:09,381  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 14:58:09,382  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2017-08-09 14:58:09,385  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 14:58:09,385  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-08-09 14:58:09,391  INFO OperationsKeyGenerator:51 - Cache key generated: /test/hello.com.zh.SpringBootDemo.controller.HelloWorldController.hello.DefaultGenericTypeNamingStrategy
+2017-08-09 14:58:09,392  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /test/hello.com.zh.SpringBootDemo.controller.HelloWorldController.hello.DefaultGenericTypeNamingStrategy
+2017-08-09 14:58:09,403  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 14:58:09,407  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 14:58:09,410  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 14:58:09,411  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 14:58:09,412  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 14:58:09,412  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 14:58:09,413  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 14:58:09,414  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 14:58:09,414  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 14:58:09,415  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 14:58:09,416  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 14:58:09,416  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 14:58:09,417  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 14:58:09,418  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 14:58:09,419  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 14:58:09,420  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 14:58:09,424  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 14:58:09,424  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2017-08-09 14:58:09,425  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 14:58:09,425  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-08-09 14:58:09,425  INFO OperationsKeyGenerator:51 - Cache key generated: /test/.com.zh.SpringBootDemo.controller.HelloWorldController.index.DefaultGenericTypeNamingStrategy
+2017-08-09 14:58:09,426  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /test/.com.zh.SpringBootDemo.controller.HelloWorldController.index.DefaultGenericTypeNamingStrategy
+2017-08-09 14:58:09,431  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 14:58:09,432  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 14:58:09,433  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 14:58:09,434  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 14:58:09,436  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 14:58:09,437  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 14:58:09,438  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 14:58:09,439  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 14:58:09,440  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 14:58:09,441  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 14:58:09,442  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 14:58:09,443  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 14:58:09,444  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 14:58:09,445  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 14:58:09,447  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 14:58:09,447  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 14:58:09,449  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 14:58:09,449  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2017-08-09 14:58:09,449  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 14:58:09,449  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-08-09 14:58:09,450  INFO OperationsKeyGenerator:51 - Cache key generated: /test/json.com.zh.SpringBootDemo.controller.HelloWorldController.json.DefaultGenericTypeNamingStrategy
+2017-08-09 14:58:09,450  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /test/json.com.zh.SpringBootDemo.controller.HelloWorldController.json.DefaultGenericTypeNamingStrategy
+2017-08-09 14:58:09,451  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 14:58:09,451  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 14:58:09,452  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 14:58:09,453  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 14:58:09,454  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 14:58:09,455  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 14:58:09,455  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 14:58:09,456  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 14:58:09,457  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 14:58:09,458  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 14:58:09,458  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 14:58:09,459  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 14:58:09,460  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 14:58:09,461  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 14:58:09,462  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 14:58:09,463  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 14:58:09,464  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 14:58:09,464  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2017-08-09 14:58:09,464  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 14:58:09,464  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-08-09 14:58:09,464  INFO OperationsKeyGenerator:51 - Cache key generated: /test/login.com.zh.SpringBootDemo.controller.HelloWorldController.login.DefaultGenericTypeNamingStrategy
+2017-08-09 14:58:09,465  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /test/login.com.zh.SpringBootDemo.controller.HelloWorldController.login.DefaultGenericTypeNamingStrategy
+2017-08-09 14:58:09,465  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 14:58:09,466  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 14:58:09,467  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 14:58:09,468  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 14:58:09,468  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 14:58:09,469  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 14:58:09,469  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 14:58:09,470  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 14:58:09,471  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 14:58:09,472  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 14:58:09,473  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 14:58:09,473  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 14:58:09,474  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 14:58:09,475  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 14:58:09,475  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 14:58:09,476  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 14:58:09,496  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 14:58:09,496  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2017-08-09 14:58:09,496  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 14:58:09,497  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-08-09 14:58:09,497  INFO OperationsKeyGenerator:51 - Cache key generated: /users/{id}.com.zh.SpringBootDemo.controller.UserController.deleteUser.DefaultGenericTypeNamingStrategy
+2017-08-09 14:58:09,497  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/{id}.com.zh.SpringBootDemo.controller.UserController.deleteUser.DefaultGenericTypeNamingStrategy
+2017-08-09 14:58:09,499  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method deleteUser was user-controller
+2017-08-09 14:58:09,501  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method deleteUser was user-controller
+2017-08-09 14:58:09,503  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 14:58:09,503  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 14:58:09,504  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 14:58:09,504  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 14:58:09,537  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 14:58:09,537  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 14:58:09,538  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 14:58:09,538  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 14:58:09,539  INFO OperationsKeyGenerator:51 - Cache key generated: /users/{id}.com.zh.SpringBootDemo.controller.UserController.getUser.DefaultGenericTypeNamingStrategy
+2017-08-09 14:58:09,539  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/{id}.com.zh.SpringBootDemo.controller.UserController.getUser.DefaultGenericTypeNamingStrategy
+2017-08-09 14:58:09,541  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUser was user-controller
+2017-08-09 14:58:09,542  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUser was user-controller
+2017-08-09 14:58:09,545  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Integer(true)
+2017-08-09 14:58:09,545  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.Integer(true)
+2017-08-09 14:58:09,545  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Integer(true)
+2017-08-09 14:58:09,546  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.Integer(true)
+2017-08-09 14:58:09,546  INFO OperationsKeyGenerator:51 - Cache key generated: /users/userCount.com.zh.SpringBootDemo.controller.UserController.getUserCount.DefaultGenericTypeNamingStrategy
+2017-08-09 14:58:09,547  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/userCount.com.zh.SpringBootDemo.controller.UserController.getUserCount.DefaultGenericTypeNamingStrategy
+2017-08-09 14:58:09,548  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserCount was user-controller
+2017-08-09 14:58:09,549  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserCount was user-controller
+2017-08-09 14:58:09,554  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.util.List<com.zh.SpringBootDemo.domain.p.User>(true)
+2017-08-09 14:58:09,555  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.util.List<com.zh.SpringBootDemo.domain.p.User>(true)
+2017-08-09 14:58:09,556  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.util.List<com.zh.SpringBootDemo.domain.p.User>(true)
+2017-08-09 14:58:09,556  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.util.List<com.zh.SpringBootDemo.domain.p.User>(true)
+2017-08-09 14:58:09,556  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 14:58:09,557  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 14:58:09,557  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: java.util.List<com.zh.SpringBootDemo.domain.p.User>(true)
+2017-08-09 14:58:09,557  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key java.util.List<com.zh.SpringBootDemo.domain.p.User>(true)
+2017-08-09 14:58:09,559  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 14:58:09,559  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 14:58:09,559  INFO OperationsKeyGenerator:51 - Cache key generated: /users/.com.zh.SpringBootDemo.controller.UserController.getUserList.DefaultGenericTypeNamingStrategy
+2017-08-09 14:58:09,559  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/.com.zh.SpringBootDemo.controller.UserController.getUserList.DefaultGenericTypeNamingStrategy
+2017-08-09 14:58:09,560  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserList was user-controller
+2017-08-09 14:58:09,561  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserList was user-controller
+2017-08-09 14:58:09,563  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 14:58:09,563  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2017-08-09 14:58:09,563  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 14:58:09,563  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-08-09 14:58:09,563  INFO OperationsKeyGenerator:51 - Cache key generated: /users/.com.zh.SpringBootDemo.controller.UserController.postUser.DefaultGenericTypeNamingStrategy
+2017-08-09 14:58:09,564  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/.com.zh.SpringBootDemo.controller.UserController.postUser.DefaultGenericTypeNamingStrategy
+2017-08-09 14:58:09,571  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method postUser was user-controller
+2017-08-09 14:58:09,572  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method postUser was user-controller
+2017-08-09 14:58:09,574  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 14:58:09,574  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2017-08-09 14:58:09,574  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 14:58:09,574  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-08-09 14:58:09,575  INFO OperationsKeyGenerator:51 - Cache key generated: /users/{id}.com.zh.SpringBootDemo.controller.UserController.putUser.DefaultGenericTypeNamingStrategy
+2017-08-09 14:58:09,575  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/{id}.com.zh.SpringBootDemo.controller.UserController.putUser.DefaultGenericTypeNamingStrategy
+2017-08-09 14:58:09,576  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method putUser was user-controller
+2017-08-09 14:58:09,578  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method putUser was user-controller
+2017-08-09 14:58:09,655  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-08-09 14:58:09,662  INFO SpringBootDemoApplication:57 - Started SpringBootDemoApplication in 12.702 seconds (JVM running for 13.346)
+2017-08-09 15:00:06,696  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-08-09 15:00:06,717  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2017-08-09 15:00:06,824  INFO TemplateEngine:825 - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2017-08-09 15:00:06,864  INFO AbstractTemplateResolver:99 - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2017-08-09 15:00:06,864  INFO AbstractTemplateResolver:110 - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2017-08-09 15:00:06,864  INFO AbstractMessageResolver:72 - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2017-08-09 15:00:06,864  INFO AbstractMessageResolver:78 - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2017-08-09 15:00:06,868  INFO CONFIG:123 - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2017-08-09 15:00:06,868  INFO TemplateEngine:838 - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2017-08-09 15:00:07,041 ERROR TemplateEngine:1085 - [THYMELEAF][http-nio-8080-exec-2] Exception processing template "error": Exception evaluating SpringEL expression: "exception.message" (error:10)
+2017-08-09 15:00:20,109 ERROR TemplateEngine:1085 - [THYMELEAF][http-nio-8080-exec-4] Exception processing template "error": Exception evaluating SpringEL expression: "exception.message" (error:10)
+2017-08-09 15:00:26,594 ERROR TemplateEngine:1085 - [THYMELEAF][http-nio-8080-exec-6] Exception processing template "error": Exception evaluating SpringEL expression: "exception.message" (error:10)
+2017-08-09 15:01:17,474 ERROR TemplateEngine:1085 - [THYMELEAF][http-nio-8080-exec-8] Exception processing template "error": Exception evaluating SpringEL expression: "exception.message" (error:10)
+2017-08-09 15:01:29,851  INFO SpringBootDemoApplication:48 - Starting SpringBootDemoApplication on zhenghedeMacBook-Pro.local with PID 3067 (/Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo/target/classes started by zhenghe1 in /Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo)
+2017-08-09 15:01:29,853  INFO SpringBootDemoApplication:597 - The following profiles are active: dev
+2017-08-09 15:01:30,081  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@687e99d8: startup date [Wed Aug 09 15:01:30 CST 2017]; root of context hierarchy
+2017-08-09 15:01:30,184  INFO Version:30 - HV000001: Hibernate Validator 5.3.5.Final
+2017-08-09 15:01:31,400  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bbe2555c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-08-09 15:01:31,878  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-08-09 15:01:32,015  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 1937 ms
+2017-08-09 15:01:32,220  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-08-09 15:01:32,220  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-08-09 15:01:32,221  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-08-09 15:01:32,221  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-08-09 15:01:32,222  INFO DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-08-09 15:01:32,222  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-08-09 15:01:33,060  INFO LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'primaryPersistenceUnit'
+2017-08-09 15:01:33,076  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: primaryPersistenceUnit
+	...]
+2017-08-09 15:01:33,149  INFO Version:37 - HHH000412: Hibernate Core {5.0.12.Final}
+2017-08-09 15:01:33,151  INFO Environment:213 - HHH000206: hibernate.properties not found
+2017-08-09 15:01:33,153  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-08-09 15:01:33,200  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-08-09 15:01:33,317  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-08-09 15:01:33,734  INFO LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'primaryPersistenceUnit'
+2017-08-09 15:01:33,750  INFO LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'secondaryPersistenceUnit'
+2017-08-09 15:01:33,751  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: secondaryPersistenceUnit
+	...]
+2017-08-09 15:01:33,758  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-08-09 15:01:33,778  INFO LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'secondaryPersistenceUnit'
+2017-08-09 15:01:34,249  INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-08-09 15:01:34,389  INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-08-09 15:01:34,812  INFO RequestMappingHandlerMapping:543 - Mapped "{[/test/]}" onto public java.lang.String com.zh.SpringBootDemo.controller.HelloWorldController.index(org.springframework.ui.ModelMap)
+2017-08-09 15:01:34,813  INFO RequestMappingHandlerMapping:543 - Mapped "{[/test/json]}" onto public java.lang.String com.zh.SpringBootDemo.controller.HelloWorldController.json() throws com.zh.SpringBootDemo.exception.MyException
+2017-08-09 15:01:34,813  INFO RequestMappingHandlerMapping:543 - Mapped "{[/test/hello]}" onto public java.lang.String com.zh.SpringBootDemo.controller.HelloWorldController.hello() throws java.lang.Exception
+2017-08-09 15:01:34,814  INFO RequestMappingHandlerMapping:543 - Mapped "{[/test/login]}" onto public java.lang.String com.zh.SpringBootDemo.controller.HelloWorldController.login()
+2017-08-09 15:01:34,816  INFO RequestMappingHandlerMapping:543 - Mapped "{[/users/],methods=[GET]}" onto public java.util.List<com.zh.SpringBootDemo.domain.p.User> com.zh.SpringBootDemo.controller.UserController.getUserList()
+2017-08-09 15:01:34,816  INFO RequestMappingHandlerMapping:543 - Mapped "{[/users/],methods=[POST]}" onto public java.lang.String com.zh.SpringBootDemo.controller.UserController.postUser(com.zh.SpringBootDemo.domain.p.User)
+2017-08-09 15:01:34,817  INFO RequestMappingHandlerMapping:543 - Mapped "{[/users/userCount],methods=[GET]}" onto public java.lang.Integer com.zh.SpringBootDemo.controller.UserController.getUserCount()
+2017-08-09 15:01:34,817  INFO RequestMappingHandlerMapping:543 - Mapped "{[/users/{id}],methods=[GET]}" onto public com.zh.SpringBootDemo.domain.p.User com.zh.SpringBootDemo.controller.UserController.getUser(java.lang.Long)
+2017-08-09 15:01:34,817  INFO RequestMappingHandlerMapping:543 - Mapped "{[/users/{id}],methods=[PUT]}" onto public java.lang.String com.zh.SpringBootDemo.controller.UserController.putUser(java.lang.Long,com.zh.SpringBootDemo.domain.p.User)
+2017-08-09 15:01:34,818  INFO RequestMappingHandlerMapping:543 - Mapped "{[/users/{id}],methods=[DELETE]}" onto public java.lang.String com.zh.SpringBootDemo.controller.UserController.deleteUser(java.lang.Long)
+2017-08-09 15:01:34,819  INFO RequestMappingHandlerMapping:543 - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2017-08-09 15:01:34,821  INFO RequestMappingHandlerMapping:543 - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2017-08-09 15:01:34,822  INFO RequestMappingHandlerMapping:543 - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2017-08-09 15:01:34,822  INFO RequestMappingHandlerMapping:543 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2017-08-09 15:01:34,826  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-08-09 15:01:34,827  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-09 15:01:35,204  INFO DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14d513ca, org.springframework.security.web.context.SecurityContextPersistenceFilter@396c1228, org.springframework.security.web.header.HeaderWriterFilter@22c4354d, org.springframework.security.web.csrf.CsrfFilter@257d3968, org.springframework.security.web.authentication.logout.LogoutFilter@b75f3f4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3fb0d9de, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f584d0c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c86b0ea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@be9cc86, org.springframework.security.web.session.SessionManagementFilter@41f5389f, org.springframework.security.web.access.ExceptionTranslationFilter@13ae87a6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a22c1ba]
+2017-08-09 15:01:35,464  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@687e99d8: startup date [Wed Aug 09 15:01:30 CST 2017]; root of context hierarchy
+2017-08-09 15:01:35,527  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-09 15:01:35,528  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-09 15:01:35,548  INFO ExceptionHandlerExceptionResolver:273 - Detected @ExceptionHandler methods in globalExceptionHandler
+2017-08-09 15:01:35,580  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-09 15:01:36,350  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-08-09 15:01:36,365  INFO DocumentationPluginsBootstrapper:80 - Context refreshed
+2017-08-09 15:01:36,388  INFO DocumentationPluginsBootstrapper:83 - Found {0} custom documentation plugin(s)
+2017-08-09 15:01:36,396  INFO ApiListingReferenceScanner:53 - Scanning for api listing references
+2017-08-09 15:01:36,400  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:01:36,403  INFO ApiListingReferenceScanner:72 - Request mapping: index belongs to groups: [[ResourceGroup{groupName='hello-world-controller', position=0, controller=com.zh.SpringBootDemo.controller.HelloWorldController}]] 
+2017-08-09 15:01:36,404  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:01:36,404  INFO ApiListingReferenceScanner:72 - Request mapping: hello belongs to groups: [[ResourceGroup{groupName='hello-world-controller', position=0, controller=com.zh.SpringBootDemo.controller.HelloWorldController}]] 
+2017-08-09 15:01:36,405  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:01:36,405  INFO ApiListingReferenceScanner:72 - Request mapping: json belongs to groups: [[ResourceGroup{groupName='hello-world-controller', position=0, controller=com.zh.SpringBootDemo.controller.HelloWorldController}]] 
+2017-08-09 15:01:36,406  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:01:36,406  INFO ApiListingReferenceScanner:72 - Request mapping: login belongs to groups: [[ResourceGroup{groupName='hello-world-controller', position=0, controller=com.zh.SpringBootDemo.controller.HelloWorldController}]] 
+2017-08-09 15:01:36,407  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserList was user-controller
+2017-08-09 15:01:36,407  INFO ApiListingReferenceScanner:72 - Request mapping: getUserList belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.zh.SpringBootDemo.controller.UserController}]] 
+2017-08-09 15:01:36,407  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method postUser was user-controller
+2017-08-09 15:01:36,408  INFO ApiListingReferenceScanner:72 - Request mapping: postUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.zh.SpringBootDemo.controller.UserController}]] 
+2017-08-09 15:01:36,408  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserCount was user-controller
+2017-08-09 15:01:36,408  INFO ApiListingReferenceScanner:72 - Request mapping: getUserCount belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.zh.SpringBootDemo.controller.UserController}]] 
+2017-08-09 15:01:36,409  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUser was user-controller
+2017-08-09 15:01:36,409  INFO ApiListingReferenceScanner:72 - Request mapping: getUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.zh.SpringBootDemo.controller.UserController}]] 
+2017-08-09 15:01:36,410  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method putUser was user-controller
+2017-08-09 15:01:36,410  INFO ApiListingReferenceScanner:72 - Request mapping: putUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.zh.SpringBootDemo.controller.UserController}]] 
+2017-08-09 15:01:36,410  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method deleteUser was user-controller
+2017-08-09 15:01:36,411  INFO ApiListingReferenceScanner:72 - Request mapping: deleteUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.zh.SpringBootDemo.controller.UserController}]] 
+2017-08-09 15:01:36,415  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/hello-world-controller Description: hello-world-controller Position: 0
+2017-08-09 15:01:36,416  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+2017-08-09 15:01:36,435  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:01:36,435  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2017-08-09 15:01:36,439  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:01:36,439  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-08-09 15:01:36,446  INFO OperationsKeyGenerator:51 - Cache key generated: /test/hello.com.zh.SpringBootDemo.controller.HelloWorldController.hello.DefaultGenericTypeNamingStrategy
+2017-08-09 15:01:36,446  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /test/hello.com.zh.SpringBootDemo.controller.HelloWorldController.hello.DefaultGenericTypeNamingStrategy
+2017-08-09 15:01:36,458  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:01:36,461  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:01:36,465  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:01:36,466  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:01:36,467  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:01:36,468  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:01:36,470  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:01:36,471  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:01:36,472  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:01:36,473  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:01:36,474  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:01:36,475  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:01:36,476  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:01:36,477  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:01:36,478  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:01:36,479  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:01:36,484  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:01:36,484  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2017-08-09 15:01:36,485  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:01:36,485  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-08-09 15:01:36,485  INFO OperationsKeyGenerator:51 - Cache key generated: /test/.com.zh.SpringBootDemo.controller.HelloWorldController.index.DefaultGenericTypeNamingStrategy
+2017-08-09 15:01:36,486  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /test/.com.zh.SpringBootDemo.controller.HelloWorldController.index.DefaultGenericTypeNamingStrategy
+2017-08-09 15:01:36,493  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:01:36,494  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:01:36,496  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:01:36,497  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:01:36,498  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:01:36,499  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:01:36,501  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:01:36,501  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:01:36,503  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:01:36,504  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:01:36,505  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:01:36,506  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:01:36,508  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:01:36,509  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:01:36,511  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:01:36,512  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:01:36,513  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:01:36,514  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2017-08-09 15:01:36,514  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:01:36,515  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-08-09 15:01:36,515  INFO OperationsKeyGenerator:51 - Cache key generated: /test/json.com.zh.SpringBootDemo.controller.HelloWorldController.json.DefaultGenericTypeNamingStrategy
+2017-08-09 15:01:36,516  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /test/json.com.zh.SpringBootDemo.controller.HelloWorldController.json.DefaultGenericTypeNamingStrategy
+2017-08-09 15:01:36,516  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:01:36,517  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:01:36,518  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:01:36,519  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:01:36,520  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:01:36,521  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:01:36,522  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:01:36,523  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:01:36,524  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:01:36,524  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:01:36,525  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:01:36,526  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:01:36,527  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:01:36,528  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:01:36,529  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:01:36,530  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:01:36,531  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:01:36,531  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2017-08-09 15:01:36,532  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:01:36,532  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-08-09 15:01:36,533  INFO OperationsKeyGenerator:51 - Cache key generated: /test/login.com.zh.SpringBootDemo.controller.HelloWorldController.login.DefaultGenericTypeNamingStrategy
+2017-08-09 15:01:36,533  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /test/login.com.zh.SpringBootDemo.controller.HelloWorldController.login.DefaultGenericTypeNamingStrategy
+2017-08-09 15:01:36,534  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:01:36,534  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:01:36,535  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:01:36,537  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:01:36,538  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:01:36,538  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:01:36,539  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:01:36,540  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:01:36,541  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:01:36,542  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:01:36,543  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:01:36,544  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:01:36,545  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:01:36,546  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:01:36,547  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:01:36,547  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:01:36,567  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:01:36,568  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2017-08-09 15:01:36,568  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:01:36,568  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-08-09 15:01:36,568  INFO OperationsKeyGenerator:51 - Cache key generated: /users/{id}.com.zh.SpringBootDemo.controller.UserController.deleteUser.DefaultGenericTypeNamingStrategy
+2017-08-09 15:01:36,569  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/{id}.com.zh.SpringBootDemo.controller.UserController.deleteUser.DefaultGenericTypeNamingStrategy
+2017-08-09 15:01:36,571  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method deleteUser was user-controller
+2017-08-09 15:01:36,573  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method deleteUser was user-controller
+2017-08-09 15:01:36,574  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 15:01:36,574  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 15:01:36,576  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 15:01:36,577  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 15:01:36,604  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 15:01:36,604  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 15:01:36,604  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 15:01:36,605  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 15:01:36,606  INFO OperationsKeyGenerator:51 - Cache key generated: /users/{id}.com.zh.SpringBootDemo.controller.UserController.getUser.DefaultGenericTypeNamingStrategy
+2017-08-09 15:01:36,606  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/{id}.com.zh.SpringBootDemo.controller.UserController.getUser.DefaultGenericTypeNamingStrategy
+2017-08-09 15:01:36,607  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUser was user-controller
+2017-08-09 15:01:36,608  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUser was user-controller
+2017-08-09 15:01:36,610  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Integer(true)
+2017-08-09 15:01:36,610  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.Integer(true)
+2017-08-09 15:01:36,610  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Integer(true)
+2017-08-09 15:01:36,611  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.Integer(true)
+2017-08-09 15:01:36,611  INFO OperationsKeyGenerator:51 - Cache key generated: /users/userCount.com.zh.SpringBootDemo.controller.UserController.getUserCount.DefaultGenericTypeNamingStrategy
+2017-08-09 15:01:36,611  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/userCount.com.zh.SpringBootDemo.controller.UserController.getUserCount.DefaultGenericTypeNamingStrategy
+2017-08-09 15:01:36,612  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserCount was user-controller
+2017-08-09 15:01:36,613  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserCount was user-controller
+2017-08-09 15:01:36,617  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.util.List<com.zh.SpringBootDemo.domain.p.User>(true)
+2017-08-09 15:01:36,617  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.util.List<com.zh.SpringBootDemo.domain.p.User>(true)
+2017-08-09 15:01:36,618  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.util.List<com.zh.SpringBootDemo.domain.p.User>(true)
+2017-08-09 15:01:36,618  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.util.List<com.zh.SpringBootDemo.domain.p.User>(true)
+2017-08-09 15:01:36,618  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 15:01:36,619  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 15:01:36,619  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: java.util.List<com.zh.SpringBootDemo.domain.p.User>(true)
+2017-08-09 15:01:36,620  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key java.util.List<com.zh.SpringBootDemo.domain.p.User>(true)
+2017-08-09 15:01:36,621  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 15:01:36,621  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 15:01:36,622  INFO OperationsKeyGenerator:51 - Cache key generated: /users/.com.zh.SpringBootDemo.controller.UserController.getUserList.DefaultGenericTypeNamingStrategy
+2017-08-09 15:01:36,622  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/.com.zh.SpringBootDemo.controller.UserController.getUserList.DefaultGenericTypeNamingStrategy
+2017-08-09 15:01:36,623  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserList was user-controller
+2017-08-09 15:01:36,624  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserList was user-controller
+2017-08-09 15:01:36,625  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:01:36,626  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2017-08-09 15:01:36,626  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:01:36,626  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-08-09 15:01:36,627  INFO OperationsKeyGenerator:51 - Cache key generated: /users/.com.zh.SpringBootDemo.controller.UserController.postUser.DefaultGenericTypeNamingStrategy
+2017-08-09 15:01:36,627  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/.com.zh.SpringBootDemo.controller.UserController.postUser.DefaultGenericTypeNamingStrategy
+2017-08-09 15:01:36,636  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method postUser was user-controller
+2017-08-09 15:01:36,637  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method postUser was user-controller
+2017-08-09 15:01:36,639  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:01:36,639  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2017-08-09 15:01:36,639  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:01:36,639  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-08-09 15:01:36,640  INFO OperationsKeyGenerator:51 - Cache key generated: /users/{id}.com.zh.SpringBootDemo.controller.UserController.putUser.DefaultGenericTypeNamingStrategy
+2017-08-09 15:01:36,640  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/{id}.com.zh.SpringBootDemo.controller.UserController.putUser.DefaultGenericTypeNamingStrategy
+2017-08-09 15:01:36,642  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method putUser was user-controller
+2017-08-09 15:01:36,643  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method putUser was user-controller
+2017-08-09 15:01:36,709  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-08-09 15:01:36,715  INFO SpringBootDemoApplication:57 - Started SpringBootDemoApplication in 7.121 seconds (JVM running for 7.502)
+2017-08-09 15:01:58,522  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-08-09 15:01:58,726  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 204 ms
+2017-08-09 15:01:58,822  INFO TemplateEngine:825 - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2017-08-09 15:01:58,857  INFO AbstractTemplateResolver:99 - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2017-08-09 15:01:58,857  INFO AbstractTemplateResolver:110 - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2017-08-09 15:01:58,858  INFO AbstractMessageResolver:72 - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2017-08-09 15:01:58,858  INFO AbstractMessageResolver:78 - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2017-08-09 15:01:58,861  INFO CONFIG:123 - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2017-08-09 15:01:58,862  INFO TemplateEngine:838 - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2017-08-09 15:01:59,014 ERROR TemplateEngine:1085 - [THYMELEAF][http-nio-8080-exec-2] Exception processing template "error": Exception evaluating SpringEL expression: "exception.message" (error:10)
+2017-08-09 15:02:22,958 ERROR TemplateEngine:1085 - [THYMELEAF][http-nio-8080-exec-4] Exception processing template "error": Exception evaluating SpringEL expression: "exception.message" (error:10)
+2017-08-09 15:02:55,104  INFO SpringBootDemoApplication:48 - Starting SpringBootDemoApplication on zhenghedeMacBook-Pro.local with PID 3072 (/Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo/target/classes started by zhenghe1 in /Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo)
+2017-08-09 15:02:55,106  INFO SpringBootDemoApplication:597 - The following profiles are active: dev
+2017-08-09 15:02:55,352  INFO AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@687e99d8: startup date [Wed Aug 09 15:02:55 CST 2017]; root of context hierarchy
+2017-08-09 15:02:55,441  INFO Version:30 - HV000001: Hibernate Validator 5.3.5.Final
+2017-08-09 15:02:56,946  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f164f168] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-08-09 15:02:57,500  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-08-09 15:02:57,649  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 2301 ms
+2017-08-09 15:02:57,876  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-08-09 15:02:57,877  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-08-09 15:02:57,877  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-08-09 15:02:57,877  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-08-09 15:02:57,878  INFO DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-08-09 15:02:57,879  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-08-09 15:02:58,843  INFO LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'primaryPersistenceUnit'
+2017-08-09 15:02:58,859  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: primaryPersistenceUnit
+	...]
+2017-08-09 15:02:58,928  INFO Version:37 - HHH000412: Hibernate Core {5.0.12.Final}
+2017-08-09 15:02:58,930  INFO Environment:213 - HHH000206: hibernate.properties not found
+2017-08-09 15:02:58,931  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-08-09 15:02:58,972  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-08-09 15:02:59,091  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-08-09 15:02:59,520  INFO LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'primaryPersistenceUnit'
+2017-08-09 15:02:59,538  INFO LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'secondaryPersistenceUnit'
+2017-08-09 15:02:59,538  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: secondaryPersistenceUnit
+	...]
+2017-08-09 15:02:59,546  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-08-09 15:02:59,567  INFO LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'secondaryPersistenceUnit'
+2017-08-09 15:03:00,008  INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-08-09 15:03:00,146  INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-08-09 15:03:00,653  INFO RequestMappingHandlerMapping:543 - Mapped "{[/test/]}" onto public java.lang.String com.zh.SpringBootDemo.controller.HelloWorldController.index(org.springframework.ui.ModelMap)
+2017-08-09 15:03:00,654  INFO RequestMappingHandlerMapping:543 - Mapped "{[/test/hello]}" onto public java.lang.String com.zh.SpringBootDemo.controller.HelloWorldController.hello() throws java.lang.Exception
+2017-08-09 15:03:00,655  INFO RequestMappingHandlerMapping:543 - Mapped "{[/test/login]}" onto public java.lang.String com.zh.SpringBootDemo.controller.HelloWorldController.login()
+2017-08-09 15:03:00,656  INFO RequestMappingHandlerMapping:543 - Mapped "{[/test/json]}" onto public java.lang.String com.zh.SpringBootDemo.controller.HelloWorldController.json() throws com.zh.SpringBootDemo.exception.MyException
+2017-08-09 15:03:00,660  INFO RequestMappingHandlerMapping:543 - Mapped "{[/users/{id}],methods=[PUT]}" onto public java.lang.String com.zh.SpringBootDemo.controller.UserController.putUser(java.lang.Long,com.zh.SpringBootDemo.domain.p.User)
+2017-08-09 15:03:00,661  INFO RequestMappingHandlerMapping:543 - Mapped "{[/users/{id}],methods=[GET]}" onto public com.zh.SpringBootDemo.domain.p.User com.zh.SpringBootDemo.controller.UserController.getUser(java.lang.Long)
+2017-08-09 15:03:00,662  INFO RequestMappingHandlerMapping:543 - Mapped "{[/users/],methods=[GET]}" onto public java.util.List<com.zh.SpringBootDemo.domain.p.User> com.zh.SpringBootDemo.controller.UserController.getUserList()
+2017-08-09 15:03:00,663  INFO RequestMappingHandlerMapping:543 - Mapped "{[/users/],methods=[POST]}" onto public java.lang.String com.zh.SpringBootDemo.controller.UserController.postUser(com.zh.SpringBootDemo.domain.p.User)
+2017-08-09 15:03:00,664  INFO RequestMappingHandlerMapping:543 - Mapped "{[/users/userCount],methods=[GET]}" onto public java.lang.Integer com.zh.SpringBootDemo.controller.UserController.getUserCount()
+2017-08-09 15:03:00,664  INFO RequestMappingHandlerMapping:543 - Mapped "{[/users/{id}],methods=[DELETE]}" onto public java.lang.String com.zh.SpringBootDemo.controller.UserController.deleteUser(java.lang.Long)
+2017-08-09 15:03:00,665  INFO RequestMappingHandlerMapping:543 - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2017-08-09 15:03:00,669  INFO RequestMappingHandlerMapping:543 - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2017-08-09 15:03:00,670  INFO RequestMappingHandlerMapping:543 - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2017-08-09 15:03:00,671  INFO RequestMappingHandlerMapping:543 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2017-08-09 15:03:00,676  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-08-09 15:03:00,677  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-09 15:03:01,182  INFO DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55d87b73, org.springframework.security.web.context.SecurityContextPersistenceFilter@3a9040f0, org.springframework.security.web.header.HeaderWriterFilter@3f838072, org.springframework.security.web.csrf.CsrfFilter@633c0a61, org.springframework.security.web.authentication.logout.LogoutFilter@34ff08c6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@637c8632, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d3768ce, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78e7b83, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@618e7761, org.springframework.security.web.session.SessionManagementFilter@31f5ffb9, org.springframework.security.web.access.ExceptionTranslationFilter@fdf029a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@43312512]
+2017-08-09 15:03:01,448  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@687e99d8: startup date [Wed Aug 09 15:02:55 CST 2017]; root of context hierarchy
+2017-08-09 15:03:01,508  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-09 15:03:01,509  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-09 15:03:01,530  INFO ExceptionHandlerExceptionResolver:273 - Detected @ExceptionHandler methods in globalExceptionHandler
+2017-08-09 15:03:01,558  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-09 15:03:02,353  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-08-09 15:03:02,368  INFO DocumentationPluginsBootstrapper:80 - Context refreshed
+2017-08-09 15:03:02,389  INFO DocumentationPluginsBootstrapper:83 - Found {0} custom documentation plugin(s)
+2017-08-09 15:03:02,396  INFO ApiListingReferenceScanner:53 - Scanning for api listing references
+2017-08-09 15:03:02,400  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:03:02,402  INFO ApiListingReferenceScanner:72 - Request mapping: index belongs to groups: [[ResourceGroup{groupName='hello-world-controller', position=0, controller=com.zh.SpringBootDemo.controller.HelloWorldController}]] 
+2017-08-09 15:03:02,403  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:03:02,403  INFO ApiListingReferenceScanner:72 - Request mapping: hello belongs to groups: [[ResourceGroup{groupName='hello-world-controller', position=0, controller=com.zh.SpringBootDemo.controller.HelloWorldController}]] 
+2017-08-09 15:03:02,404  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:03:02,404  INFO ApiListingReferenceScanner:72 - Request mapping: json belongs to groups: [[ResourceGroup{groupName='hello-world-controller', position=0, controller=com.zh.SpringBootDemo.controller.HelloWorldController}]] 
+2017-08-09 15:03:02,405  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:03:02,405  INFO ApiListingReferenceScanner:72 - Request mapping: login belongs to groups: [[ResourceGroup{groupName='hello-world-controller', position=0, controller=com.zh.SpringBootDemo.controller.HelloWorldController}]] 
+2017-08-09 15:03:02,405  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserList was user-controller
+2017-08-09 15:03:02,406  INFO ApiListingReferenceScanner:72 - Request mapping: getUserList belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.zh.SpringBootDemo.controller.UserController}]] 
+2017-08-09 15:03:02,406  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method postUser was user-controller
+2017-08-09 15:03:02,407  INFO ApiListingReferenceScanner:72 - Request mapping: postUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.zh.SpringBootDemo.controller.UserController}]] 
+2017-08-09 15:03:02,407  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserCount was user-controller
+2017-08-09 15:03:02,408  INFO ApiListingReferenceScanner:72 - Request mapping: getUserCount belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.zh.SpringBootDemo.controller.UserController}]] 
+2017-08-09 15:03:02,408  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method putUser was user-controller
+2017-08-09 15:03:02,408  INFO ApiListingReferenceScanner:72 - Request mapping: putUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.zh.SpringBootDemo.controller.UserController}]] 
+2017-08-09 15:03:02,409  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUser was user-controller
+2017-08-09 15:03:02,409  INFO ApiListingReferenceScanner:72 - Request mapping: getUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.zh.SpringBootDemo.controller.UserController}]] 
+2017-08-09 15:03:02,410  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method deleteUser was user-controller
+2017-08-09 15:03:02,410  INFO ApiListingReferenceScanner:72 - Request mapping: deleteUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.zh.SpringBootDemo.controller.UserController}]] 
+2017-08-09 15:03:02,414  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+2017-08-09 15:03:02,415  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/hello-world-controller Description: hello-world-controller Position: 0
+2017-08-09 15:03:02,432  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:03:02,432  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2017-08-09 15:03:02,436  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:03:02,436  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-08-09 15:03:02,442  INFO OperationsKeyGenerator:51 - Cache key generated: /test/hello.com.zh.SpringBootDemo.controller.HelloWorldController.hello.DefaultGenericTypeNamingStrategy
+2017-08-09 15:03:02,443  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /test/hello.com.zh.SpringBootDemo.controller.HelloWorldController.hello.DefaultGenericTypeNamingStrategy
+2017-08-09 15:03:02,452  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:03:02,455  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:03:02,459  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:03:02,460  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:03:02,461  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:03:02,462  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:03:02,463  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:03:02,463  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:03:02,464  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:03:02,465  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:03:02,466  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:03:02,467  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:03:02,468  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:03:02,469  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:03:02,470  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:03:02,471  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method hello was hello-world-controller
+2017-08-09 15:03:02,476  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:03:02,476  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2017-08-09 15:03:02,477  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:03:02,477  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-08-09 15:03:02,477  INFO OperationsKeyGenerator:51 - Cache key generated: /test/.com.zh.SpringBootDemo.controller.HelloWorldController.index.DefaultGenericTypeNamingStrategy
+2017-08-09 15:03:02,477  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /test/.com.zh.SpringBootDemo.controller.HelloWorldController.index.DefaultGenericTypeNamingStrategy
+2017-08-09 15:03:02,483  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:03:02,485  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:03:02,486  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:03:02,487  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:03:02,488  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:03:02,488  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:03:02,490  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:03:02,491  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:03:02,493  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:03:02,494  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:03:02,495  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:03:02,496  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:03:02,497  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:03:02,498  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:03:02,499  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:03:02,500  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was hello-world-controller
+2017-08-09 15:03:02,501  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:03:02,502  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2017-08-09 15:03:02,502  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:03:02,502  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-08-09 15:03:02,503  INFO OperationsKeyGenerator:51 - Cache key generated: /test/json.com.zh.SpringBootDemo.controller.HelloWorldController.json.DefaultGenericTypeNamingStrategy
+2017-08-09 15:03:02,503  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /test/json.com.zh.SpringBootDemo.controller.HelloWorldController.json.DefaultGenericTypeNamingStrategy
+2017-08-09 15:03:02,504  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:03:02,505  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:03:02,506  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:03:02,507  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:03:02,508  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:03:02,509  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:03:02,510  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:03:02,511  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:03:02,511  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:03:02,512  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:03:02,513  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:03:02,514  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:03:02,515  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:03:02,516  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:03:02,517  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:03:02,518  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method json was hello-world-controller
+2017-08-09 15:03:02,519  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:03:02,519  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2017-08-09 15:03:02,519  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:03:02,520  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-08-09 15:03:02,520  INFO OperationsKeyGenerator:51 - Cache key generated: /test/login.com.zh.SpringBootDemo.controller.HelloWorldController.login.DefaultGenericTypeNamingStrategy
+2017-08-09 15:03:02,520  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /test/login.com.zh.SpringBootDemo.controller.HelloWorldController.login.DefaultGenericTypeNamingStrategy
+2017-08-09 15:03:02,521  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:03:02,522  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:03:02,522  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:03:02,523  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:03:02,524  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:03:02,525  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:03:02,526  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:03:02,527  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:03:02,528  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:03:02,528  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:03:02,529  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:03:02,530  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:03:02,530  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:03:02,531  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:03:02,532  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:03:02,533  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method login was hello-world-controller
+2017-08-09 15:03:02,552  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:03:02,552  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2017-08-09 15:03:02,553  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:03:02,553  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-08-09 15:03:02,553  INFO OperationsKeyGenerator:51 - Cache key generated: /users/{id}.com.zh.SpringBootDemo.controller.UserController.deleteUser.DefaultGenericTypeNamingStrategy
+2017-08-09 15:03:02,553  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/{id}.com.zh.SpringBootDemo.controller.UserController.deleteUser.DefaultGenericTypeNamingStrategy
+2017-08-09 15:03:02,556  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method deleteUser was user-controller
+2017-08-09 15:03:02,557  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method deleteUser was user-controller
+2017-08-09 15:03:02,559  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 15:03:02,559  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 15:03:02,561  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 15:03:02,561  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 15:03:02,590  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 15:03:02,590  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 15:03:02,591  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 15:03:02,591  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 15:03:02,592  INFO OperationsKeyGenerator:51 - Cache key generated: /users/{id}.com.zh.SpringBootDemo.controller.UserController.getUser.DefaultGenericTypeNamingStrategy
+2017-08-09 15:03:02,593  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/{id}.com.zh.SpringBootDemo.controller.UserController.getUser.DefaultGenericTypeNamingStrategy
+2017-08-09 15:03:02,594  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUser was user-controller
+2017-08-09 15:03:02,595  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUser was user-controller
+2017-08-09 15:03:02,597  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Integer(true)
+2017-08-09 15:03:02,597  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.Integer(true)
+2017-08-09 15:03:02,597  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Integer(true)
+2017-08-09 15:03:02,597  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.Integer(true)
+2017-08-09 15:03:02,598  INFO OperationsKeyGenerator:51 - Cache key generated: /users/userCount.com.zh.SpringBootDemo.controller.UserController.getUserCount.DefaultGenericTypeNamingStrategy
+2017-08-09 15:03:02,598  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/userCount.com.zh.SpringBootDemo.controller.UserController.getUserCount.DefaultGenericTypeNamingStrategy
+2017-08-09 15:03:02,599  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserCount was user-controller
+2017-08-09 15:03:02,600  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserCount was user-controller
+2017-08-09 15:03:02,604  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.util.List<com.zh.SpringBootDemo.domain.p.User>(true)
+2017-08-09 15:03:02,604  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.util.List<com.zh.SpringBootDemo.domain.p.User>(true)
+2017-08-09 15:03:02,605  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.util.List<com.zh.SpringBootDemo.domain.p.User>(true)
+2017-08-09 15:03:02,605  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.util.List<com.zh.SpringBootDemo.domain.p.User>(true)
+2017-08-09 15:03:02,605  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 15:03:02,606  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 15:03:02,606  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: java.util.List<com.zh.SpringBootDemo.domain.p.User>(true)
+2017-08-09 15:03:02,606  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key java.util.List<com.zh.SpringBootDemo.domain.p.User>(true)
+2017-08-09 15:03:02,607  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 15:03:02,607  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.zh.SpringBootDemo.domain.p.User(true)
+2017-08-09 15:03:02,608  INFO OperationsKeyGenerator:51 - Cache key generated: /users/.com.zh.SpringBootDemo.controller.UserController.getUserList.DefaultGenericTypeNamingStrategy
+2017-08-09 15:03:02,608  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/.com.zh.SpringBootDemo.controller.UserController.getUserList.DefaultGenericTypeNamingStrategy
+2017-08-09 15:03:02,609  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserList was user-controller
+2017-08-09 15:03:02,610  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getUserList was user-controller
+2017-08-09 15:03:02,611  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:03:02,612  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2017-08-09 15:03:02,612  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:03:02,612  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-08-09 15:03:02,612  INFO OperationsKeyGenerator:51 - Cache key generated: /users/.com.zh.SpringBootDemo.controller.UserController.postUser.DefaultGenericTypeNamingStrategy
+2017-08-09 15:03:02,612  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/.com.zh.SpringBootDemo.controller.UserController.postUser.DefaultGenericTypeNamingStrategy
+2017-08-09 15:03:02,622  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method postUser was user-controller
+2017-08-09 15:03:02,623  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method postUser was user-controller
+2017-08-09 15:03:02,625  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:03:02,625  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2017-08-09 15:03:02,626  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2017-08-09 15:03:02,626  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-08-09 15:03:02,626  INFO OperationsKeyGenerator:51 - Cache key generated: /users/{id}.com.zh.SpringBootDemo.controller.UserController.putUser.DefaultGenericTypeNamingStrategy
+2017-08-09 15:03:02,626  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /users/{id}.com.zh.SpringBootDemo.controller.UserController.putUser.DefaultGenericTypeNamingStrategy
+2017-08-09 15:03:02,628  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method putUser was user-controller
+2017-08-09 15:03:02,628  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method putUser was user-controller
+2017-08-09 15:03:02,694  INFO TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-08-09 15:03:02,701  INFO SpringBootDemoApplication:57 - Started SpringBootDemoApplication in 7.867 seconds (JVM running for 8.256)
+2017-08-09 15:20:04,601  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-08-09 15:20:04,623  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2017-08-09 15:20:13,623  INFO TemplateEngine:825 - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2017-08-09 15:20:13,662  INFO AbstractTemplateResolver:99 - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2017-08-09 15:20:13,662  INFO AbstractTemplateResolver:110 - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2017-08-09 15:20:13,662  INFO AbstractMessageResolver:72 - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2017-08-09 15:20:13,663  INFO AbstractMessageResolver:78 - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2017-08-09 15:20:13,667  INFO CONFIG:123 - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * XML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2017-08-09 15:20:13,667  INFO TemplateEngine:838 - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
