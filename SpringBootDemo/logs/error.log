@@ -1,6 +1,48 @@
-2017-08-09 15:00:07,041 ERROR TemplateEngine:1085 - [THYMELEAF][http-nio-8080-exec-2] Exception processing template "error": Exception evaluating SpringEL expression: "exception.message" (error:10)
-2017-08-09 15:00:20,109 ERROR TemplateEngine:1085 - [THYMELEAF][http-nio-8080-exec-4] Exception processing template "error": Exception evaluating SpringEL expression: "exception.message" (error:10)
-2017-08-09 15:00:26,594 ERROR TemplateEngine:1085 - [THYMELEAF][http-nio-8080-exec-6] Exception processing template "error": Exception evaluating SpringEL expression: "exception.message" (error:10)
-2017-08-09 15:01:17,474 ERROR TemplateEngine:1085 - [THYMELEAF][http-nio-8080-exec-8] Exception processing template "error": Exception evaluating SpringEL expression: "exception.message" (error:10)
-2017-08-09 15:01:59,014 ERROR TemplateEngine:1085 - [THYMELEAF][http-nio-8080-exec-2] Exception processing template "error": Exception evaluating SpringEL expression: "exception.message" (error:10)
-2017-08-09 15:02:22,958 ERROR TemplateEngine:1085 - [THYMELEAF][http-nio-8080-exec-4] Exception processing template "error": Exception evaluating SpringEL expression: "exception.message" (error:10)
+2017-08-10 11:41:57,673 ERROR TemplateEngine:1085 - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "error": Exception evaluating SpringEL expression: "exception.message" (error:10)
+2017-08-10 11:42:01,455 ERROR TemplateEngine:1085 - [THYMELEAF][http-nio-8080-exec-2] Exception processing template "error": Exception evaluating SpringEL expression: "exception.message" (error:10)
+2017-08-10 11:42:58,597 ERROR TemplateEngine:1085 - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "error": Exception evaluating SpringEL expression: "exception.message" (error:10)
+2017-08-10 11:43:04,151 ERROR TemplateEngine:1085 - [THYMELEAF][http-nio-8080-exec-2] Exception processing template "error": Exception evaluating SpringEL expression: "exception.message" (error:10)
+2017-08-10 11:43:08,931 ERROR TemplateEngine:1085 - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "error": Exception evaluating SpringEL expression: "exception.message" (error:10)
+2017-08-10 11:44:45,600 ERROR LoggingFailureAnalysisReporter:42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2017-08-10 11:44:50,238 ERROR LoggingFailureAnalysisReporter:42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2017-08-10 11:44:53,768 ERROR TemplateEngine:1085 - [THYMELEAF][http-nio-8080-exec-7] Exception processing template "error": Exception evaluating SpringEL expression: "exception.message" (error:10)
+2017-08-10 11:46:09,031 ERROR LoggingFailureAnalysisReporter:42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+

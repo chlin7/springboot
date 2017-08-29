@@ -1,9 +1,18 @@
-2017-08-09 14:57:57,287  INFO SpringBootDemoApplication:48 ---- Starting SpringBootDemoApplication on zhenghedeMacBook-Pro.local with PID 3049 (/Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo/target/classes started by zhenghe1 in /Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo)
-2017-08-09 14:57:57,291  INFO SpringBootDemoApplication:597 ---- The following profiles are active: dev
-2017-08-09 14:58:09,662  INFO SpringBootDemoApplication:57 ---- Started SpringBootDemoApplication in 12.702 seconds (JVM running for 13.346)
-2017-08-09 15:01:29,851  INFO SpringBootDemoApplication:48 ---- Starting SpringBootDemoApplication on zhenghedeMacBook-Pro.local with PID 3067 (/Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo/target/classes started by zhenghe1 in /Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo)
-2017-08-09 15:01:29,853  INFO SpringBootDemoApplication:597 ---- The following profiles are active: dev
-2017-08-09 15:01:36,715  INFO SpringBootDemoApplication:57 ---- Started SpringBootDemoApplication in 7.121 seconds (JVM running for 7.502)
-2017-08-09 15:02:55,104  INFO SpringBootDemoApplication:48 ---- Starting SpringBootDemoApplication on zhenghedeMacBook-Pro.local with PID 3072 (/Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo/target/classes started by zhenghe1 in /Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo)
-2017-08-09 15:02:55,106  INFO SpringBootDemoApplication:597 ---- The following profiles are active: dev
-2017-08-09 15:03:02,701  INFO SpringBootDemoApplication:57 ---- Started SpringBootDemoApplication in 7.867 seconds (JVM running for 8.256)
+2017-08-10 11:41:10,695  INFO SpringBootDemoApplication:48 ---- Starting SpringBootDemoApplication on zhenghedeMacBook-Pro.local with PID 1693 (/Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo/target/classes started by zhenghe1 in /Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo)
+2017-08-10 11:41:10,698  INFO SpringBootDemoApplication:597 ---- The following profiles are active: dev
+2017-08-10 11:41:16,727  INFO SpringBootDemoApplication:57 ---- Started SpringBootDemoApplication in 6.31 seconds (JVM running for 6.667)
+2017-08-10 11:41:46,145  INFO SpringBootDemoApplication:48 ---- Starting SpringBootDemoApplication on zhenghedeMacBook-Pro.local with PID 1709 (/Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo/target/classes started by zhenghe1 in /Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo)
+2017-08-10 11:41:46,147  INFO SpringBootDemoApplication:597 ---- The following profiles are active: dev
+2017-08-10 11:41:51,683  INFO SpringBootDemoApplication:57 ---- Started SpringBootDemoApplication in 5.772 seconds (JVM running for 6.093)
+2017-08-10 11:42:48,376  INFO SpringBootDemoApplication:48 ---- Starting SpringBootDemoApplication on zhenghedeMacBook-Pro.local with PID 1714 (/Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo/target/classes started by zhenghe1 in /Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo)
+2017-08-10 11:42:48,378  INFO SpringBootDemoApplication:597 ---- The following profiles are active: dev
+2017-08-10 11:42:53,757  INFO SpringBootDemoApplication:57 ---- Started SpringBootDemoApplication in 5.607 seconds (JVM running for 5.914)
+2017-08-10 11:44:39,061  INFO SpringBootDemoApplication:48 ---- Starting SpringBootDemoApplication on zhenghedeMacBook-Pro.local with PID 1720 (/Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo/target/classes started by zhenghe1 in /Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo)
+2017-08-10 11:44:39,063  INFO SpringBootDemoApplication:597 ---- The following profiles are active: dev
+2017-08-10 11:44:43,896  INFO SpringBootDemoApplication:48 ---- Starting SpringBootDemoApplication on zhenghedeMacBook-Pro.local with PID 1721 (/Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo/target/classes started by zhenghe1 in /Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo)
+2017-08-10 11:44:43,899  INFO SpringBootDemoApplication:597 ---- The following profiles are active: dev
+2017-08-10 11:46:03,575  INFO SpringBootDemoApplication:48 ---- Starting SpringBootDemoApplication on zhenghedeMacBook-Pro.local with PID 1727 (/Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo/target/classes started by zhenghe1 in /Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo)
+2017-08-10 11:46:03,578  INFO SpringBootDemoApplication:597 ---- The following profiles are active: dev
+2017-08-10 11:46:42,046  INFO SpringBootDemoApplication:48 ---- Starting SpringBootDemoApplication on zhenghedeMacBook-Pro.local with PID 1730 (/Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo/target/classes started by zhenghe1 in /Users/zhenghe1/Documents/workspace/github/springboot/SpringBootDemo)
+2017-08-10 11:46:42,048  INFO SpringBootDemoApplication:597 ---- The following profiles are active: dev
+2017-08-10 11:46:47,001  INFO SpringBootDemoApplication:57 ---- Started SpringBootDemoApplication in 5.173 seconds (JVM running for 5.473)

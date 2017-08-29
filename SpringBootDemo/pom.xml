@@ -88,10 +88,10 @@
 		</dependency>
 		<!-- log4j依赖 -->
 		<!-- Spring Security依赖开始 -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
+		</dependency> -->
 		<!-- Spring Security依赖结束 -->
 
 	</dependencies>
